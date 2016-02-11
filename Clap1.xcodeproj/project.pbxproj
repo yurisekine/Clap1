@@ -14,6 +14,8 @@
 		D0B66CE01C6D2A2000B2A476 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0B66CDE1C6D2A2000B2A476 /* LaunchScreen.storyboard */; };
 		D0B66CEB1C6D2A2000B2A476 /* Clap1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B66CEA1C6D2A2000B2A476 /* Clap1Tests.swift */; };
 		D0B66CF61C6D2A2000B2A476 /* Clap1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B66CF51C6D2A2000B2A476 /* Clap1UITests.swift */; };
+		D0B66D051C6D2A8000B2A476 /* clap-button.png in Resources */ = {isa = PBXBuildFile; fileRef = D0B66D031C6D2A8000B2A476 /* clap-button.png */; };
+		D0B66D061C6D2A8000B2A476 /* clap.wav in Resources */ = {isa = PBXBuildFile; fileRef = D0B66D041C6D2A8000B2A476 /* clap.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		D0B66CF11C6D2A2000B2A476 /* Clap1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Clap1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0B66CF51C6D2A2000B2A476 /* Clap1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clap1UITests.swift; sourceTree = "<group>"; };
 		D0B66CF71C6D2A2000B2A476 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0B66D031C6D2A8000B2A476 /* clap-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clap-button.png"; sourceTree = "<group>"; };
+		D0B66D041C6D2A8000B2A476 /* clap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = clap.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 		D0B66CD41C6D2A2000B2A476 /* Clap1 */ = {
 			isa = PBXGroup;
 			children = (
+				D0B66D031C6D2A8000B2A476 /* clap-button.png */,
+				D0B66D041C6D2A8000B2A476 /* clap.wav */,
 				D0B66CD51C6D2A2000B2A476 /* AppDelegate.swift */,
 				D0B66CD71C6D2A2000B2A476 /* ViewController.swift */,
 				D0B66CD91C6D2A2000B2A476 /* Main.storyboard */,
@@ -232,9 +238,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0B66D061C6D2A8000B2A476 /* clap.wav in Resources */,
 				D0B66CE01C6D2A2000B2A476 /* LaunchScreen.storyboard in Resources */,
 				D0B66CDD1C6D2A2000B2A476 /* Assets.xcassets in Resources */,
 				D0B66CDB1C6D2A2000B2A476 /* Main.storyboard in Resources */,
+				D0B66D051C6D2A8000B2A476 /* clap-button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
