@@ -14,14 +14,28 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     @IBOutlet var clapPickerView: UIPickerView!
     var audioPlayer: AVAudioPlayer!
     var soundCount: Int = 0
+    
+    @IBOutlet var pianoPickerView: UIPickerView!
+    
+    var type: Bool!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         //再生する音源のURLを生成
-        let soundFilePath = NSBundle.mainBundle().pathForResource("clap", ofType: "wav")!
+        var soundFilePath: String!
+
+            soundFilePath = NSBundle.mainBundle().pathForResource("piano", ofType: "wav")!
+      /*  } else if type == false {
+            soundFilePath = NSBundle.mainBundle().pathForResource("clap", ofType: "wav")!
+        } else {
+            print("??")
+        }*/
+
         let fileURL = NSURL(fileURLWithPath: String(soundFilePath))
+  
+
         
         //AVAudioPlayerのインスタンス化
         do {
@@ -29,6 +43,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         } catch {
             print("音楽ファイルが読み込めませんでした")
         }
+        
         
         clapPickerView.delegate = self
         clapPickerView.dataSource = self
@@ -51,6 +66,13 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     }
     
     @IBAction func playButton() {
+        type = true
+        audioPlayer.numberOfLoops = soundCount
+        audioPlayer.play()
+    }
+    
+    @IBAction func pianoButton() {
+        type = false
         audioPlayer.numberOfLoops = soundCount
         audioPlayer.play()
     }
